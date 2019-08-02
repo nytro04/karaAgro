@@ -1,25 +1,3 @@
-.navbar {
-  display: flex;
-  padding: 2rem;
-  justify-content: space-around;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 600;
-
-  ul {
-    display: flex;
-    list-style: none;
-
-    .social-media a {
-      margin: 0.8rem 0.2rem;
-    }
-
-    li {
-      margin: 0.8rem 2rem;
-    }
-  }
-}
-
 .logo img {
   height: 2rem;
   width: auto;
