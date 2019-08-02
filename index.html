@@ -34,13 +34,28 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="" class="navigation__link">About</a>
+            <a
+              class="navigation__link"
+              href="#about"
+              onclick="smoothScroll(event)"
+              >About</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">Features</a>
+            <a
+              class="navigation__link"
+              href="#feature"
+              onclick="smoothScroll(event)"
+              >Features</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">Contact</a>
+            <a
+              class="navigation__link"
+              href="#contact"
+              onclick="smoothScroll(event)"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -50,13 +65,18 @@
       <nav class="navbar">
         <div class="logo">
           <img src="img/logo.fw-min.png" alt="logo" />
-          <!-- <p>LOGO</p> -->
         </div>
 
         <ul class="main-nav-ul">
-          <li class="nav-links"><a href="#about">about us</a></li>
-          <li class="nav-links"><a href="#feature">what we do</a></li>
-          <li class="nav-links"><a href="#contact">contact us</a></li>
+          <li class="nav-links">
+            <a href="#about" onclick="smoothScroll(event)">about us</a>
+          </li>
+          <li class="nav-links">
+            <a href="#feature" onclick="smoothScroll(event)">what we do</a>
+          </li>
+          <li class="nav-links">
+            <a href="#contact" onclick="smoothScroll(event)">contact us</a>
+          </li>
         </ul>
 
         <div class="">
@@ -92,7 +112,7 @@
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="u-margin-bottom-large u-center-text ">
           <h2 class="heading__secondary">about us</h2>
         </div>
@@ -144,7 +164,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" id="feature">
         <div class="u-margin-bottom-large u-center-text ">
           <h2 class="heading__secondary">Features</h2>
         </div>
@@ -211,12 +231,12 @@
           </div>
         </div>
 
-        <div class="card__btn-box">
+        <div class="card__btn-box u-margin-bottom-large">
           <a class="btn btn-green" href="#what">See More &rarr;</a>
         </div>
       </section>
 
-      <section class="section-team">
+      <section class="section-team" id="team">
         <div class="u-margin-bottom-large u-center-text ">
           <h2 class="heading__secondary">The team</h2>
         </div>
@@ -227,7 +247,7 @@
               <img src="img/darl.jpg" alt="CEO" class="team__ceo " />
               <div class="team-text">
                 <h3
-                  class="heading__tertiary u-margin-bottom-small u-margin-top-small  u-center-text"
+                  class="heading__tertiary u-margin-bottom-small u-margin-top-medium  u-center-text"
                 >
                   Our c.e.o
                 </h3>
@@ -247,7 +267,7 @@
               <img src="img/darl.jpg" alt="CEO" class="team__ceo" />
               <div class="team-text">
                 <h3
-                  class="heading__tertiary u-margin-bottom-small u-margin-top-small  u-center-text"
+                  class="heading__tertiary u-margin-bottom-small u-margin-top-medium  u-center-text"
                 >
                   Our c.e.o
                 </h3>
@@ -264,7 +284,7 @@
         </div>
       </section>
 
-      <section class="section-contact">
+      <section class="section-contact" id="contact">
         <div class="u-center-text">
           <h2
             class="heading__secondary u-margin-top-small u-margin-bottom-medium"
@@ -348,18 +368,7 @@
         </div>
       </div>
     </footer>
-    <!-- <footer>
-      <hr />
-      <div class="container row__footer">
-        <div>
-          <p>Copyright &copy; 2019 by minoHealth. All rights reserved.</p>
-        </div>
-        <div>
-          <p>About | Features | Team | Contact</p>
-        </div>
-      </div>
-    </footer> -->
 
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>

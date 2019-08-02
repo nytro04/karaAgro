@@ -22,7 +22,8 @@
   }
 
   @include respond(tab-port) {
-    padding: 5rem 0;
+    padding-bottom: 28rem;
+    padding-top: 5rem;
   }
 }
 
