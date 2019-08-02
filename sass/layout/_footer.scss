@@ -1,19 +1,18 @@
-// .footer_links {
-//   float: left;
-// }
-
-// .row__footer {
-//   display: flex;
-//   justify-content: space-between;
-// }
-
 .footer {
   padding: 2rem 0;
   background-color: $color-dark-grey-3;
   font-size: 1.4rem;
   color: $color-dark-grey-background;
 
+  // @include respond(tab-port) {
+  //   padding: 1rem 0;
+  // }
+
   &__nav {
+    @include respond(tab-port) {
+      // width: 100%;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -44,6 +43,10 @@
     }
   }
 
-  //   &__copyright {
-  //   }
+  &__copyright {
+    @include respond(tab-port) {
+      text-align: center;
+      margin-bottom: -1rem;
+    }
+  }
 }
