@@ -1,0 +1,49 @@
+// .footer_links {
+//   float: left;
+// }
+
+// .row__footer {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.footer {
+  padding: 2rem 0;
+  background-color: $color-dark-grey-3;
+  font-size: 1.4rem;
+  color: $color-dark-grey-background;
+
+  &__nav {
+  }
+
+  &__list {
+    list-style: none;
+    text-align: center;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-dark-grey-background;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    &:hover,
+    &:active {
+      color: $primary-color;
+    }
+  }
+
+  //   &__copyright {
+  //   }
+}

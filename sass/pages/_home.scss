@@ -1,0 +1,33 @@
+/* ABOUT US */
+.section-about {
+  padding-bottom: 20rem;
+}
+.secondary-heading h2 {
+  text-align: center;
+}
+
+/* FEATURE */
+.section-features {
+  padding: 10rem 0;
+  background-color: #f2f2f2;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+}
+
+.section-features > * {
+  transform: skewY(7deg);
+}
+
+.section-features a {
+  display: block;
+  margin: auto 0;
+}
+
+.section-team {
+  padding: 10rem 0;
+}
+
+.section-contact {
+  padding: 5rem 0;
+  background-color: #f2f2f2;
+}
