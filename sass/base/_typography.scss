@@ -14,21 +14,32 @@ a {
   &__primary {
     color: #f7f6f6;
     text-transform: uppercase;
+    /* margin-bottom: 6rem; */
 
     &--main {
       display: block;
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: 900;
 
       letter-spacing: 1.5rem;
+
+      @include respond(phone) {
+        // letter-spacing: 0.5rem;
+        // font-size: 3.5rem;
+      }
     }
 
     &--sub {
       display: block;
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 700;
       letter-spacing: 0.35rem;
       margin-bottom: 4rem;
+
+      @include respond(phone) {
+        // letter-spacing: 0.3rem;
+        // font-size: 1.5rem;
+      }
     }
   }
 
@@ -42,6 +53,14 @@ a {
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     -webkit-background-clip: text;
     color: transparent;
+
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
   }
 
   &__tertiary {

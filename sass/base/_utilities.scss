@@ -48,11 +48,12 @@
 
 .team {
   text-align: center;
-  width: 80%;
+  padding: 0 3rem;
 }
 
 .social__media {
   color: $color-dark-grey;
+  padding-bottom: 3rem;
 
   &--facebook:hover,
   &--facebook:visited {
