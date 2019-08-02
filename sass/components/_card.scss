@@ -1,0 +1,82 @@
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 52rem;
+  transition: transform 0.3s;
+
+  &--team {
+    perspective: 150rem;
+    position: relative;
+    height: 28rem;
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+
+  &__side {
+    height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+  }
+
+  &__team {
+    position: absolute;
+    width: 70%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.3);
+  }
+  &__picture {
+    background-size: cover;
+    height: 25rem;
+
+    &--1 {
+      background-image: url(../img/maize.jpg);
+    }
+
+    &--2 {
+      background-image: url(../img/lars-blankers-6Z7Ss9jlEL0-unsplash-min-min.jpg);
+    }
+
+    &--3 {
+      background-position: center;
+      background-image: url(../img/bells_pepper.jpg);
+    }
+
+    &--ceo {
+      background-image: url(../img/darl.jpg);
+    }
+
+    &--team {
+      background-image: url(../img/team.jpg);
+    }
+  }
+
+  &__details {
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+
+    & h3 {
+      border-bottom: 0.1rem solid $color-dark-grey;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &__btn-box {
+    position: absolute;
+    top: 88%;
+    left: 45%;
+    transform: translateX(-50%);
+  }
+}

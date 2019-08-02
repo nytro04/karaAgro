@@ -22,6 +22,30 @@
     <title>KaraAgro</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Features</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header id="home" class="header">
       <nav class="navbar">
         <div class="logo">
@@ -36,16 +60,16 @@
         </ul>
 
         <div class="social-media">
-          <a href="https://facebook.com/minoHealth/" target="_blank"
+          <a href="https://facebook.com/karaAgro/" target="_blank"
             ><i
               class="flaticon-facebook-logo
                   "
             ></i
           ></a>
-          <a href="https://twitter.com/minoHealth" target="_blank"
+          <a href="https://twitter.com/karaAgro" target="_blank"
             ><i class="flaticon-twitter-logo-silhouette"></i
           ></a>
-          <a href="https://instagram.com/minohealth/" target="_blank"
+          <a href="https://instagram.com/karaAgro/" target="_blank"
             ><i class="flaticon-instagram-logo"></i
           ></a>
         </div>
@@ -53,13 +77,13 @@
 
       <div class="container">
         <div class="header__text-box">
-          <h1 class="primary-heading">
-            <span class="heading-primary--main">optimising </span>
-            <span class="heading-primary--sub">Agric. through technology</span>
+          <h1 class="heading__primary">
+            <span class="heading__primary--main">optimising </span>
+            <span class="heading__primary--sub">Agric. through technology</span>
           </h1>
 
           <div>
-            <a class="btn header-btn" href="#what">Read More &rarr;</a>
+            <a class="btn btn-header" href="#what">Read More &rarr;</a>
           </div>
         </div>
       </div>
@@ -68,12 +92,12 @@
     <main>
       <section class="section-about">
         <div class="u-margin-bottom-large u-center-text ">
-          <h2 class="secondary-heading">about us</h2>
+          <h2 class="heading__secondary">about us</h2>
         </div>
 
         <div class="row">
           <div class="col-1-of-2">
-            <h3 class="tertiary-heading u-margin-bottom-small">
+            <h3 class="heading__tertiary u-margin-bottom-small">
               The plant disease detection app
             </h3>
             <p class="paragraph u-margin-bottom-medium">
@@ -82,7 +106,7 @@
               plant disease
             </p>
 
-            <h3 class="tertiary-heading u-margin-bottom-small">
+            <h3 class="heading__tertiary u-margin-bottom-small">
               Ensure quality plant health
             </h3>
             <p class="paragraph">
@@ -120,7 +144,7 @@
 
       <section class="section-features">
         <div class="u-margin-bottom-large u-center-text ">
-          <h2 class="secondary-heading">Features</h2>
+          <h2 class="heading__secondary">Features</h2>
         </div>
 
         <div class="row">
@@ -130,7 +154,7 @@
                 <div class="card__picture card__picture--1">&nbsp;</div>
                 <div class="card__details">
                   <h3
-                    class="tertiary-heading u-margin-bottom-small u-center-text"
+                    class="heading__tertiary u-margin-bottom-small u-center-text"
                   >
                     healthy veggies
                   </h3>
@@ -150,7 +174,7 @@
                 <div class="card__picture card__picture--2">&nbsp;</div>
                 <div class="card__details">
                   <h3
-                    class="tertiary-heading u-margin-bottom-small u-center-text"
+                    class="heading__tertiary u-margin-bottom-small u-center-text"
                   >
                     healthy veggies
                   </h3>
@@ -170,7 +194,7 @@
                 <div class="card__picture card__picture--3">&nbsp;</div>
                 <div class="card__details">
                   <h3
-                    class="tertiary-heading u-margin-bottom-small u-center-text"
+                    class="heading__tertiary u-margin-bottom-small u-center-text"
                   >
                     healthy veggies
                   </h3>
@@ -192,7 +216,7 @@
 
       <section class="section-team">
         <div class="u-margin-bottom-large u-center-text ">
-          <h2 class="secondary-heading">about us</h2>
+          <h2 class="heading__secondary">The team</h2>
         </div>
 
         <div class="row">
@@ -203,7 +227,7 @@
               </div>
             </div>
             <div class="team-text">
-              <h3 class="tertiary-heading u-margin-bottom-small">
+              <h3 class="heading__tertiary u-margin-bottom-small">
                 Our c.e.o
               </h3>
 
@@ -223,7 +247,7 @@
               </div>
             </div>
             <div class="team-text">
-              <h3 class="tertiary-heading u-margin-bottom-small">
+              <h3 class="heading__tertiary u-margin-bottom-small">
                 Our team
               </h3>
 
@@ -239,7 +263,7 @@
       <section class="section-contact">
         <div class="u-center-text ">
           <h2
-            class="secondary-heading u-margin-top-small u-margin-bottom-medium"
+            class="heading__secondary u-margin-top-small u-margin-bottom-medium"
           >
             contact us
           </h2>
@@ -247,7 +271,7 @@
 
         <div class="row">
           <div class="col-1-of-3">
-            <h3 class="tertiary-heading">about us</h3>
+            <h3 class="heading__tertiary">about us</h3>
             <p class="paragraph">
               karaAgro is an Android app that utilises the power of Artificial
               Intelligence and Data Analytics for easy and early detection of
@@ -256,44 +280,75 @@
           </div>
           <div class="col-1-of-3 icon">
             <p class="paragraph">
-              <i class="flaticon-phone-receiver"></i> Address here
-            </p>
-            <p class="paragraph">
               <i
                 class="flaticon-facebook-placeholder-for-locate-places-on-maps"
               ></i>
               +233 50 404 9188 | +233 55 180 0233
             </p>
+            <p class="paragraph">
+              <i class="flaticon-phone-receiver"></i> Address here
+            </p>
+            <p class="paragraph">
+              <i class="flaticon-phone-receiver"></i> Email here
+            </p>
           </div>
           <div class="col-1-of-3">
             <div class="social-media social-media__footer">
-              <a href="https://facebook.com/minoHealth/" target="_blank"
+              <a href="https://facebook.com/karaAgro/" target="_blank"
                 ><i class="flaticon-facebook-logo social-media__footer"></i
               ></a>
-              <a href="https://twitter.com/minoHealth" target="_blank"
+              <a href="https://twitter.com/karaAgro" target="_blank"
                 ><i
                   class="flaticon-twitter-logo-silhouette social-media__footer"
                 ></i
               ></a>
-              <a href="https://instagram.com/minohealth/" target="_blank"
+              <a href="https://instagram.com/karaAgro/" target="_blank"
                 ><i class="flaticon-instagram-logo social-media__footer"></i
               ></a>
             </div>
           </div>
         </div>
       </section>
-      <footer>
-        <hr />
-        <div class="container row__footer">
-          <div>
-            <p>Copyright &copy; 2019 by minoHealth. All rights reserved.</p>
-          </div>
-          <div>
-            <p>About | Features | Team | Contact</p>
+    </main>
+
+    <footer class="footer">
+      <div class="row">
+        <div class="col-1-of-2">
+          <p class="footer_copyright">
+            Copyright &copy; 2019 by KaraAgro. All rights reserved
+          </p>
+        </div>
+        <div class="col-1-of-2">
+          <div class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Features</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Team</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
+    <!-- <footer>
+      <hr />
+      <div class="container row__footer">
+        <div>
+          <p>Copyright &copy; 2019 by minoHealth. All rights reserved.</p>
+        </div>
+        <div>
+          <p>About | Features | Team | Contact</p>
+        </div>
+      </div>
+    </footer> -->
 
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
   </body>
