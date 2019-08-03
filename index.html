@@ -10,40 +10,16 @@
       rel="stylesheet"
     />
 
-    <!-- <link rel="stylesheet" href="/css/font/flaticon.css" /> -->
+    <link rel="stylesheet" href="/css/font/flaticon.css" />
     <link rel="stylesheet" href="/css/style.css" />
 
     <title>KaraAgro</title>
   </head>
   <body>
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
-
-      <div class="navigation__background">&nbsp;</div>
-
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="">About</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="">Features</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
     <header id="home" class="header">
       <nav class="navbar">
-        <div class="logo">
-          <img src="img/logo.fw-min.png" alt="logo" />
+        <div class="logo__box">
+          <img src="img/logo.fw-min.png" alt="logo" class="logo" />
         </div>
 
         <ul class="main-nav-ul">
@@ -75,6 +51,33 @@
           ></a>
         </div>
       </nav>
+
+      <div class="mobile__nav">
+        <div class="sideNav">
+          <a href="javascript: void(0)" class="sideNav-close">&times</a>
+
+          <ul class="mobile__nav--ul">
+            <li class="nav-links">
+              <a href="#about" onclick="smoothScroll(event)">about us</a>
+            </li>
+            <li class="nav-links">
+              <a href="#feature" onclick="smoothScroll(event)">feature</a>
+            </li>
+            <li class="nav-links">
+              <a href="#team" onclick="smoothScroll(event)">our team</a>
+            </li>
+            <li class="nav-links">
+              <a href="#contact" onclick="smoothScroll(event)">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div id="content">
+          <i
+            class="flaticon-menu-three-horizontal-lines-symbol hamburger-menu"
+            aria-hidden="true"
+          ></i>
+        </div>
+      </div>
 
       <div class="container">
         <div class="header__text-box">
@@ -223,15 +226,12 @@
         <div class="row">
           <div class="col-1-of-2">
             <div class="team">
+              <h3 class="heading__tertiary u-margin-bottom-large u-center-text">
+                Our c.e.o
+              </h3>
               <img src="img/darl.jpg" alt="CEO" class="team__ceo " />
               <div class="team-text">
-                <h3
-                  class="heading__tertiary u-margin-bottom-small u-margin-top-medium  u-center-text"
-                >
-                  Our c.e.o
-                </h3>
-
-                <p class="paragraph">
+                <p class="paragraph u-margin-top-medium">
                   Darlington Ahiale Akogo is the Founder, C.E.O and Director of
                   Artificial Intelligence at minoHealth. He's also a Board
                   Advisor and Ambassador at AI Expo Africa, the largest business
@@ -243,15 +243,12 @@
 
           <div class="col-1-of-2">
             <div class="team">
+              <h3 class="heading__tertiary u-margin-bottom-large u-center-text">
+                App Team
+              </h3>
               <img src="img/darl.jpg" alt="CEO" class="team__ceo" />
               <div class="team-text">
-                <h3
-                  class="heading__tertiary u-margin-bottom-small u-margin-top-medium  u-center-text"
-                >
-                  Our c.e.o
-                </h3>
-
-                <p class="paragraph">
+                <p class="paragraph u-margin-top-medium">
                   Darlington Ahiale Akogo is the Founder, C.E.O and Director of
                   Artificial Intelligence at minoHealth. He's also a Board
                   Advisor and Ambassador at AI Expo Africa, the largest business
