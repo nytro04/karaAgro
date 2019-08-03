@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 02/08/2019 17:12
+  	Creation date: 02/08/2019 23:31
   	*/
 
 @font-face {
@@ -38,6 +38,7 @@ margin-left: 20px;
 .flaticon-phone-receiver:before { content: "\f105"; }
 .flaticon-close-envelope:before { content: "\f106"; }
 .flaticon-envelope:before { content: "\f107"; }
+.flaticon-menu-three-horizontal-lines-symbol:before { content: "\f108"; }
 /*
 0 - 600px     ==> Phone
 600 - 900px   ==> Tablet portrait
@@ -169,14 +170,14 @@ a {
   text-align: center;
   padding: 0 3rem; }
 
-.social__media {
+.social__media a {
   color: #777;
   padding-bottom: 3rem; }
-  .social__media--facebook:hover, .social__media--facebook:visited {
+  .social__media a--facebook:hover, .social__media a--facebook:visited {
     color: #3b5998; }
-  .social__media--twitter:hover, .social__media--twitter:visited {
+  .social__media a--twitter:hover, .social__media a--twitter:visited {
     color: #55acee; }
-  .social__media--insta:hover, .social__media--insta:visited {
+  .social__media a--insta:hover, .social__media a--insta:visited {
     color: #3f729b; }
 
 .btn:link, .btn:visited {
@@ -308,10 +309,15 @@ a {
     left: 45%;
     transform: translateX(-50%); }
 
-.logo img {
+.logo {
   height: 2rem;
   width: auto;
   margin-top: 1.2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .logo__box {
+      position: absolute;
+      top: 3rem;
+      left: 3rem; } }
 
 .header {
   height: 95vh;
@@ -399,6 +405,9 @@ a {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 600; }
+  @media only screen and (max-width: 56.25em) {
+    .navbar {
+      display: none; } }
   .navbar ul {
     display: flex;
     list-style: none; }
@@ -406,9 +415,14 @@ a {
       margin: 0.8rem 0.2rem; }
     .navbar ul li {
       margin: 0.8rem 2rem; }
+
+.mobile__nav {
+  display: none; }
   @media only screen and (max-width: 56.25em) {
-    .navbar {
-      display: none; } }
+    .mobile__nav {
+      display: block; } }
+  .mobile__nav--ul {
+    list-style-type: none; }
 
 .navbar .logo img {
   display: block;
@@ -416,129 +430,47 @@ a {
   width: auto;
   margin-top: 1.2rem; }
 
-.navigation__checkbox {
-  display: none; }
-
-.navigation__button {
-  background-color: #fff;
-  height: 7rem;
-  width: 7rem;
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  border-radius: 50%;
-  z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-  text-align: center;
-  cursor: pointer; }
-  @media only screen and (max-width: 56.25em) {
-    .navigation__button {
-      top: 3rem;
-      right: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .navigation__button {
-      top: 2rem;
-      right: 2rem; } }
-
-.navigation__background {
-  height: 6rem;
-  width: 6rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
-  background-image: radial-gradient(#7ed56f, #28b485);
-  z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
-  @media only screen and (max-width: 56.25em) {
-    .navigation__background {
-      top: 3.5rem;
-      right: 3.5rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .navigation__background {
-      top: 2.5rem;
-      right: 2.5rem; } }
-
-.navigation__nav {
-  height: 100vh;
+.sideNav {
+  background-color: #55c57a;
+  color: #f2f2f2;
+  cursor: pointer;
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 1500;
-  opacity: 0;
-  width: 0;
-  transition: all 0.8s cubic-bezier(0.68, 0, 0.265, 1); }
-
-.navigation__list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  list-style: none;
+  left: -75rem;
+  width: 75rem;
   text-align: center;
-  width: 100%; }
+  transition: transform 0.4s; }
+  .sideNav a {
+    display: block;
+    padding: 1rem; }
+  .sideNav.active {
+    transform: translateX(75rem);
+    font-size: 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    z-index: 9000; }
+    .sideNav.active + #content {
+      margin-left: 20rem; }
 
-.navigation__item {
-  margin: 1rem; }
-
-.navigation__link:link, .navigation__link:visited {
-  display: inline-block;
+.sideNav-close {
   font-size: 3rem;
-  font-weight: 300;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 0.3rem;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-  background-size: 230%;
-  transition: all 0.4s; }
+  text-align: center; }
 
-.navigation__link:hover, .navigation__link:active {
-  background-position: 100%;
-  color: #55c57a;
-  transform: translateX(1.5rem); }
+#content {
+  transition: margin-left 0.4s;
+  padding: 2rem; }
 
-.navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80); }
+.hamburger-menu {
+  display: none; }
+  @media only screen and (max-width: 56.25em) {
+    .hamburger-menu {
+      color: #55c57a;
+      position: fixed;
+      display: block;
+      z-index: 5000; } }
 
-.navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
-  width: 100%; }
-
-.navigation__icon {
-  position: relative;
-  margin-top: 3.5rem; }
-  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-    width: 3rem;
-    height: 2px;
-    background-color: #333;
-    display: inline-block; }
-  .navigation__icon::before, .navigation__icon::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    transition: all 0.2s; }
-  .navigation__icon::before {
-    top: -0.8rem; }
-  .navigation__icon::after {
-    top: 0.8rem; }
-
-.navigation__button:hover .navigation__icon::before {
-  top: -1rem; }
-
-.navigation__button:hover .navigation__icon::after {
-  top: 1rem; }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon {
-  background-color: transparent; }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-  top: 0;
-  transform: rotate(135deg); }
-
-.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
-  top: 0;
-  transform: rotate(-135deg); }
+.hidden {
+  display: none; }
 
 /* ABOUT US */
 .section-about {
@@ -576,8 +508,3 @@ a {
   @media only screen and (max-width: 56.25em) {
     .section-contact {
       padding: 0 3rem; } }
-
-/* &__picture--team {
-    background-size: cover;
-    height: 25rem;
-  } */
