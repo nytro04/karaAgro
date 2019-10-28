@@ -102,6 +102,12 @@ a {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
 
+.android_pic {
+  margin-left: 1.5rem;
+  padding-top: 0.6rem;
+  height: 3rem;
+  width: auto; }
+
 .u-margin-bottom-large {
   margin-bottom: 8rem !important; }
   @media only screen and (max-width: 56.25em) {
