@@ -1,0 +1,16 @@
+Credits:
+
+Darlington Ahiale Akogo
+Project Lead, Artificial Intelligence Development Lead
+
+Aseda Addai-Desseh
+Android Development Lead
+
+Andrews Atta Kangah
+Additional Android Development, Cloud Computing Development
+
+Mazior Nyanyo
+Additional Android UI Development
+
+Francis Badasu
+Website Development
