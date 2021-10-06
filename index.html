@@ -9,6 +9,12 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
+    <!-- <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
 
     <link rel="stylesheet" href="/css/font/flaticon.css" />
     <link rel="stylesheet" href="/css/style.css" />
@@ -18,117 +24,56 @@
   <body>
     <header id="home" class="header">
       <nav class="navbar">
-        <div class="logo__box">
-          <img src="img/logo.fw-min.png" alt="logo" class="logo" />
+        <div class="logo">
+          <img src="img/logo.fw-min.png" alt="logo" />
+          <!-- <p>LOGO</p> -->
         </div>
 
         <ul class="main-nav-ul">
-          <li class="nav-links">
-            <a href="#about" onclick="smoothScroll(event)">about us</a>
-          </li>
-          <li class="nav-links">
-            <a href="#feature" onclick="smoothScroll(event)">what we do</a>
-          </li>
-          <li class="nav-links">
-            <a href="#contact" onclick="smoothScroll(event)">contact us</a>
-          </li>
+          <li class="nav-links"><a href="#about">about us</a></li>
+          <li class="nav-links"><a href="#feature">what we do</a></li>
+          <li class="nav-links"><a href="#contact">contact us</a></li>
         </ul>
 
-        <div class="">
-          <a
-            href="https://facebook.com/karaAgro/"
-            rel="noopener noreferrer"
-            target="_blank"
-            ><i class="flaticon-facebook-logo social__media--facebook"></i
-          ></a>
-          <a
-            href="https://twitter.com/karaAgro"
-            rel="noopener noreferrer"
-            target="_blank"
+        <div class="social-media">
+          <a href="https://facebook.com/minoHealth/" target="_blank"
             ><i
-              class="flaticon-twitter-logo-silhouette social__media--twitter"
+              class="flaticon-facebook-logo
+                  "
             ></i
           ></a>
-          <a
-            href="https://instagram.com/karaAgro/"
-            rel="noopener noreferrer"
-            target="_blank"
-            ><i class="flaticon-instagram-logo social__media--insta"></i
+          <a href="https://twitter.com/minoHealth" target="_blank"
+            ><i class="flaticon-twitter-logo-silhouette"></i
           ></a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://play.google.com/store/apps/details?id=com.gudra.karaagro"
-            ><img
-              class="android_pic"
-              src="/img/playstore.png"
-              alt="get it on Android"
-          /></a>
+          <a href="https://instagram.com/minohealth/" target="_blank"
+            ><i class="flaticon-instagram-logo"></i
+          ></a>
         </div>
       </nav>
 
-      <div class="mobile__nav">
-        <div class="sideNav">
-          <a href="javascript: void(0)" class="sideNav-close">&times</a>
-
-          <ul class="mobile__nav--ul">
-            <li class="nav-links">
-              <a href="#about" onclick="smoothScroll(event)">about us</a>
-            </li>
-            <li class="nav-links">
-              <a href="#feature" onclick="smoothScroll(event)">feature</a>
-            </li>
-            <li class="nav-links">
-              <a href="#team" onclick="smoothScroll(event)">our team</a>
-            </li>
-            <li class="nav-links">
-              <a href="#contact" onclick="smoothScroll(event)">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div id="content">
-          <i
-            class="flaticon-menu-three-horizontal-lines-symbol hamburger-menu"
-            aria-hidden="true"
-          ></i>
-        </div>
-      </div>
-
       <div class="container">
         <div class="header__text-box">
-          <h1 class="heading__primary">
-            <span class="heading__primary--main">optimising </span>
-            <span class="heading__primary--sub">Agric. through technology</span>
+          <h1 class="primary-heading">
+            <span class="heading-primary--main">optimising </span>
+            <span class="heading-primary--sub">Agric. through technology</span>
           </h1>
 
           <div>
-            <a
-              class="btn btn-header"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://play.google.com/store/apps/details?id=com.gudra.karaagro"
-              >Read More &rarr;</a
-            >
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://play.google.com/store/apps/details?id=com.gudra.karaagro"
-              ><img class="android_pic" src="/img/playstore.png" alt=""
-            /></a>
+            <a class="btn header-btn" href="#what">Read More &rarr;</a>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="section-about" id="about">
+      <section class="section-about">
         <div class="u-margin-bottom-large u-center-text ">
-          <h2 class="heading__secondary">about us</h2>
+          <h2 class="secondary-heading">about us</h2>
         </div>
 
         <div class="row">
           <div class="col-1-of-2">
-            <h3 class="heading__tertiary u-margin-bottom-small">
+            <h3 class="tertiary-heading u-margin-bottom-small">
               The plant disease detection app
             </h3>
             <p class="paragraph u-margin-bottom-medium">
@@ -137,7 +82,7 @@
               plant disease
             </p>
 
-            <h3 class="heading__tertiary u-margin-bottom-small">
+            <h3 class="tertiary-heading u-margin-bottom-small">
               Ensure quality plant health
             </h3>
             <p class="paragraph">
@@ -147,20 +92,9 @@
 
             <a
               class="btn btn-green u-margin-top-medium u-margin-bottom-medium"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://play.google.com/store/apps/details?id=com.gudra.karaagro"
+              href="#what"
               >Read More &rarr;</a
             >
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://play.google.com/store/apps/details?id=com.gudra.karaagro"
-              ><img
-                class="android_pic"
-                src="/img/playstore.png"
-                alt="get it on Android"
-            /></a>
           </div>
           <div class="col-1-of-2">
             <div class="composition">
@@ -175,7 +109,7 @@
                 class="composition__photo composition__photo--2"
               />
               <img
-                src="img/kara9.jpg"
+                src="img/hai-nguyen-LSZfNPVZjTw-unsplash-min.jpg"
                 alt="photo 3"
                 class="composition__photo composition__photo--3"
               />
@@ -184,9 +118,9 @@
         </div>
       </section>
 
-      <section class="section-features" id="feature">
+      <section class="section-features">
         <div class="u-margin-bottom-large u-center-text ">
-          <h2 class="heading__secondary">Features</h2>
+          <h2 class="secondary-heading">Features</h2>
         </div>
 
         <div class="row">
@@ -196,15 +130,14 @@
                 <div class="card__picture card__picture--1">&nbsp;</div>
                 <div class="card__details">
                   <h3
-                    class="heading__tertiary u-margin-bottom-small u-center-text"
+                    class="tertiary-heading u-margin-bottom-small u-center-text"
                   >
-                    MAIZE
+                    healthy veggies
                   </h3>
 
                   <p class="paragraph">
-                    The app supports the detection of three (3) different Maize
-                    diseases, which are; Common Rust, Gray Leaf Spot and
-                    Northern Leaf Blight...
+                    karaAgro allows automated detection of plant diseases,
+                    therefore empowering farmers to ensure Quality Plant Health.
                   </p>
                 </div>
               </div>
@@ -217,15 +150,14 @@
                 <div class="card__picture card__picture--2">&nbsp;</div>
                 <div class="card__details">
                   <h3
-                    class="heading__tertiary u-margin-bottom-small u-center-text"
+                    class="tertiary-heading u-margin-bottom-small u-center-text"
                   >
-                    TOMOTOES
+                    healthy veggies
                   </h3>
 
                   <p class="paragraph">
-                    The app supports the detection of eight (8) different Tomato
-                    diseases, which are; Bacterial Spot, Early Blight, Late
-                    Blight, Leaf Mold, Septoria Leaf Spot...
+                    karaAgro allows automated detection of plant diseases,
+                    therefore empowering farmers to ensure Quality Plant Health.
                   </p>
                 </div>
               </div>
@@ -238,14 +170,14 @@
                 <div class="card__picture card__picture--3">&nbsp;</div>
                 <div class="card__details">
                   <h3
-                    class="heading__tertiary u-margin-bottom-small u-center-text"
+                    class="tertiary-heading u-margin-bottom-small u-center-text"
                   >
-                    POTATOES
+                    healthy veggies
                   </h3>
 
                   <p class="paragraph">
-                    The app supports the detection of two(2) different Potato
-                    diseases, which are; Early Blight and Late Blight.
+                    karaAgro allows automated detection of plant diseases,
+                    therefore empowering farmers to ensure Quality Plant Health.
                   </p>
                 </div>
               </div>
@@ -253,89 +185,61 @@
           </div>
         </div>
 
-        <div class="card__btn-box u-margin-bottom-large">
-          <a
-            class="btn btn-green"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://play.google.com/store/apps/details?id=com.gudra.karaagro"
-            >See More &rarr;</a
-          >
+        <div class="card__btn-box">
+          <a class="btn btn-green" href="#what">See More &rarr;</a>
         </div>
       </section>
 
-      <section class="section-team" id="team">
+      <section class="section-team">
         <div class="u-margin-bottom-large u-center-text ">
-          <h2 class="heading__secondary">The team</h2>
+          <h2 class="secondary-heading">about us</h2>
         </div>
 
         <div class="row">
           <div class="col-1-of-2">
-            <div class="team">
-              <h3 class="heading__tertiary u-margin-bottom-large u-center-text">
+            <div class="card--team">
+              <div class="card__team">
+                <div class="card__picture card__picture--ceo">&nbsp;</div>
+              </div>
+            </div>
+            <div class="team-text">
+              <h3 class="tertiary-heading u-margin-bottom-small">
                 Our c.e.o
               </h3>
-              <img src="img/darl.jpg" alt="CEO" class="team__ceo " />
-              <div class="team-text">
-                <p class="paragraph u-margin-top-medium">
-                  Darlington Ahiale Akogo is the Founder, C.E.O and Director of
-                  Artificial Intelligence at minoHealth. He's also a Board
-                  Advisor and Ambassador at AI Expo Africa, the largest business
-                  focused AI community in Africa
-                </p>
-              </div>
+
+              <p class="paragraph">
+                Darlington Ahiale Akogo is the Founder, C.E.O and Director of
+                Artificial Intelligence at minoHealth. He's also a Board Advisor
+                and Ambassador at AI Expo Africa, the largest business focused
+                AI community in Africa
+              </p>
             </div>
           </div>
 
           <div class="col-1-of-2">
-            <div class="team">
-              <h3 class="heading__tertiary u-margin-bottom-large u-center-text">
-                Credits
-              </h3>
-              <div></div>
-
-              <div class="team-text">
-                <h3 class="heading__tertiary u-center-text">
-                  Project Lead, Artificial Intelligence
-                </h3>
-                <p class="paragraph">
-                  Darlington Ahiale Akogo
-                </p>
-                <h3 class="heading__tertiary u-center-text u-margin-top-medium">
-                  Android Development Team
-                </h3>
-                <p class="paragraph">
-                  Aseda Addai-Desseh
-                </p>
-                <p class="paragraph">
-                  Andrews Atta Kangah
-                </p>
-                <p class="paragraph">
-                  Mazior Nyanyo
-                </p>
-                <h3 class="heading__tertiary u-center-text u-margin-top-medium">
-                  Website Development
-                </h3>
-                <p class="paragraph">
-                  Francis Badasu
-                </p>
-
-                <!-- <p class="paragraph u-margin-top-medium">
-                  Darlington Ahiale Akogo is the Founder, C.E.O and Director of
-                  Artificial Intelligence at minoHealth. He's also a Board
-                  Advisor and Ambassador at AI Expo Africa, the largest business
-                  focused AI community in Africa
-                </p> -->
+            <div class="card--team">
+              <div class="card__team">
+                <div class="card__picture card__picture--team">&nbsp;</div>
               </div>
+            </div>
+            <div class="team-text">
+              <h3 class="tertiary-heading u-margin-bottom-small">
+                Our team
+              </h3>
+
+              <p class="paragraph ">
+                Our amazing team are made up of members from the Android team,
+                AI team and web development team
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-contact" id="contact">
-        <div class="u-center-text">
+      <section class="section-contact">
+        <div class="u-center-text ">
           <h2
-            class="heading__secondary u-margin-top-small u-margin-bottom-medium"
+            class="secondary-heading u-margin-top-small u-margin-bottom-medium"
           >
             contact us
           </h2>
@@ -343,7 +247,7 @@
 
         <div class="row">
           <div class="col-1-of-3">
-            <h3 class="heading__tertiary">about us</h3>
+            <h3 class="tertiary-heading">about us</h3>
             <p class="paragraph">
               karaAgro is an Android app that utilises the power of Artificial
               Intelligence and Data Analytics for easy and early detection of
@@ -352,101 +256,45 @@
           </div>
           <div class="col-1-of-3 icon">
             <p class="paragraph">
-              <i class="flaticon-phone-receiver"></i> &nbsp; +233 50 404 9188 |
-              +233 55 180 0233
+              <i class="flaticon-phone-receiver"></i> Address here
             </p>
             <p class="paragraph">
               <i
                 class="flaticon-facebook-placeholder-for-locate-places-on-maps"
               ></i>
-              &nbsp; 64 East Ave, Weija
+              +233 50 404 9188 | +233 55 180 0233
             </p>
-            <p class="paragraph">
-              <i class="flaticon-envelope"></i>
-              &nbsp; contact@gudra-studio.com
-            </p>
-            <div></div>
           </div>
           <div class="col-1-of-3">
-            <div class="social__media">
-              <a href="https://facebook.com/karaAgro/" target="_blank"
+            <div class="social-media social-media__footer">
+              <a href="https://facebook.com/minoHealth/" target="_blank"
+                ><i class="flaticon-facebook-logo social-media__footer"></i
+              ></a>
+              <a href="https://twitter.com/minoHealth" target="_blank"
                 ><i
-                  class="flaticon-facebook-logo social__media social__media--facebook"
+                  class="flaticon-twitter-logo-silhouette social-media__footer"
                 ></i
               ></a>
-              <a href="https://twitter.com/karaAgro" target="_blank"
-                ><i
-                  class="flaticon-twitter-logo-silhouette social__media social__media--twitter"
-                ></i
+              <a href="https://instagram.com/minohealth/" target="_blank"
+                ><i class="flaticon-instagram-logo social-media__footer"></i
               ></a>
-              <a href="https://instagram.com/karaAgro/" target="_blank"
-                ><i
-                  class="flaticon-instagram-logo social__media social__media--insta"
-                ></i
-              ></a>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://play.google.com/store/apps/details?id=com.gudra.karaagro"
-                ><img
-                  class="android_pic"
-                  src="/img/playstore.png"
-                  alt="get it on Android"
-              /></a>
             </div>
           </div>
         </div>
       </section>
-    </main>
-
-    <footer class="footer">
-      <div class="row">
-        <div class="col-1-of-2">
-          <p class="footer__copyright">
-            Copyright &copy; 2019 by KaraAgro. All rights reserved
-          </p>
-        </div>
-        <div class="col-1-of-2">
-          <div class="footer__nav">
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a
-                  href="#home"
-                  onclick="smoothScroll(event)"
-                  class="footer__link"
-                  >Home</a
-                >
-              </li>
-              <li class="footer__item">
-                <a
-                  href="#about"
-                  onclick="smoothScroll(event)"
-                  class="footer__link"
-                  >About</a
-                >
-              </li>
-              <li class="footer__item">
-                <a
-                  href="#feature"
-                  onclick="smoothScroll(event)"
-                  class="footer__link"
-                  >Features</a
-                >
-              </li>
-              <li class="footer__item">
-                <a
-                  href="#team"
-                  onclick="smoothScroll(event)"
-                  class="footer__link"
-                  >Team</a
-                >
-              </li>
-            </ul>
+      <footer>
+        <hr />
+        <div class="container row__footer">
+          <div>
+            <p>Copyright &copy; 2019 by minoHealth. All rights reserved.</p>
+          </div>
+          <div>
+            <p>About | Features | Team | Contact</p>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </main>
 
-    <script src="js/script.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
   </body>
 </html>
